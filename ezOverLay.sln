@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezOverLay", "ezOverLay\ezOverLay.csproj", "{95D8AD9B-0DD1-4203-AED4-A71DA35E4B78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95D8AD9B-0DD1-4203-AED4-A71DA35E4B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D8AD9B-0DD1-4203-AED4-A71DA35E4B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D8AD9B-0DD1-4203-AED4-A71DA35E4B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D8AD9B-0DD1-4203-AED4-A71DA35E4B78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A5D1124-81A1-4314-9A96-6E54673AF661}
+	EndGlobalSection
+EndGlobal
