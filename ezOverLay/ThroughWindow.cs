@@ -15,7 +15,13 @@ internal class ThroughWindow
     {
         this.handle = handle;
         this.index = index;
-        loop = new Thread(() => { while (true) SetWindowLong(handle, index, GetWindowLong(handle, index) | 0x8000 | 0x20);});
+        loop = new Thread(() => {
+             while (true)
+             {
+                 SetWindowLong(handle, index, GetWindowLong(handle, index) | 0x8000 | 0x20);
+                 Thread.Sleep(10);
+             }
+         });
     }
     public void Enable() => loop.Start();
     public void Disable() => loop.Abort();
