@@ -17,13 +17,11 @@ public class WorthOverlay
     private IntPtr hookWindhWnd = IntPtr.Zero;
     public bool Discover(IntPtr window)
     {
-        if ((int)GetWindow(GetForegroundWindow(), GetWindowType.GW_HWNDFIRST) != 0)
-            hookWindhWnd = GetForegroundWindow();
-        if (GetForegroundWindow() != window)
-            if (!(GetWindow(GetForegroundWindow(), GetWindowType.GW_HWNDFIRST) == IntPtr.Zero) && hookWindhWnd != window)
-            {
-                return false;
-            }
-        return true;
+        if ((int)GetWindow(GetForegroundWindow(), GetWindowType.GW_CHILD) != 0)
+                hookWindhWnd = GetForegroundWindow();
+            if (GetForegroundWindow() != window)
+                if ((int)GetWindow(GetForegroundWindow(), GetWindowType.GW_CHILD) != 0 || hookWindhWnd != window)
+                    return false;
+            return true;
     }
 }
