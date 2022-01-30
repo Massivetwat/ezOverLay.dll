@@ -1,18 +1,27 @@
 This is my first ever dll, I made all of this in about 5 hours. There will be things that might not work.
 
-Subscribe to swedish twat 
+Subscribe to swedish twat - https://www.youtube.com/channel/UC4et5EGjwrSzE7nA6AlZ37g. (Шведская пизда, original nick-name moment)
 
-TO use ezOverLay.dll compile this poject and there will be a dll located in the bin folder. 
+TO use EzOverlay.dll compile this poject and there will be a dll located in the bin folder. 
 Reference it in your own project and add these things.
 
-At the very start add this 
-
-
-
-Now add this in your load method
-
-CheckForIllegalThreadCalls = false;
-
 If you don't understand this then watch my next video that explains how to use this dll ;)
-Yotic: This "Man" made a repository and a video for the sake of one line, omg
-Forked by MrYotic
+Yotic: This "Man" made a repository and a video for the sake of one line, omg.
+Forked by MrYotic.
+
+Form:
+private WorthOverlay worthOverlay = new WorthOverlay();
+private ThroughWindow throughWindow = new ThroughWindow(Handle); // this.Handle
+
+Start method:
+CheckForIllegalThreadCalls = false;
+throughWindow.Enable();
+
+Loop mehthod: //(use new Thread(() => {while(true) yourloopmethod();}))
+if (!worthOverlay.Discover(Wrapper.HookProcess.MainWindowHandle))
+   return;
+/*
+.
+.
+.
+*/
